@@ -13,7 +13,7 @@ const fetchData = (cb) => {
 const x = (txt) => {
   fetchData((x) => {
     fetchData((x) => {
-      fetchData((x) => {});
+      fetchData((x) => { });
     });
   });
 };
@@ -38,4 +38,6 @@ fetchData()
     console.log(x);
     return fetchData();
   })
-  .then((x) => {});
+  .then((x) => {
+    console.log("hue hue");
+  });
